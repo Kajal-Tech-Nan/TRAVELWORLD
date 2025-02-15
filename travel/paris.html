@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="C:\Users\HP\OneDrive\Desktop\Code\CIH25\logoimg.jpg" alt="Travel Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#nearby">Nearby Places</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search hotels, attractions...">
+        <button onclick="search()">Search</button>
+    </section>
+
+    <section id="hotels">
+        <h2>Most Preferred Hotel in Paris</h2>
+        <div class="hotel-card">
+            <img src="ritz-paris.jpg" alt="The Ritz Paris">
+            <h3>The Ritz Paris</h3>
+            <p>Experience world-class luxury in the heart of Paris. The Ritz offers stunning views, gourmet dining, and an unforgettable stay.</p>
+        </div>
+    </section>
+
+    <section id="nearby">
+        <h2>Nearby Places in Paris</h2>
+        <div class="places-grid">
+            <div class="place-item">
+                <img src="eiffel-tower.jpg" alt="Eiffel Tower">
+                <h3>Eiffel Tower</h3>
+                <p>The iconic landmark of Paris, offering breathtaking city views.</p>
+            </div>
+            <div class="place-item">
+                <img src="louvre.jpg" alt="Louvre Museum">
+                <h3>Louvre Museum</h3>
+                <p>Home to the Mona Lisa and countless other masterpieces.</p>
+            </div>
+            <div class="place-item">
+                <img src="notre-dame.jpg" alt="Notre-Dame Cathedral">
+                <h3>Notre-Dame Cathedral</h3>
+                <p>A Gothic architectural masterpiece with rich history.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function search() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            alert("Searching for: " + input);
+        }
+    </script>
+</body>
+</html>

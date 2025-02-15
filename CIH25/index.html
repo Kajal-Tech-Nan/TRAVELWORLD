@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Travel Itinerary Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TravelTogether</h1>
+        <nav>
+            <ul>
+                <li><a href="#itinerary">Itinerary</a></li>
+                <li><a href="#budget">Budget</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#voting">Activity Voting</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="itinerary">
+            <h2>Shared Itinerary</h2>
+            <div class="itinerary-list">
+                <!-- Itinerary items would be dynamically added here -->
+                <div class="itinerary-item">
+                    <span class="time">09:00 AM</span>
+                    <span class="activity">Visit Eiffel Tower</span>
+                </div>
+                <div class="itinerary-item">
+                    <span class="time">12:00 PM</span>
+                    <span class="activity">Lunch at Le Petit Café</span>
+                </div>
+            </div>
+            <button id="add-activity">Add Activity</button>
+        </section>
+
+        <section id="budget">
+            <h2>Real-time Budget</h2>
+            <div class="budget-overview">
+                <p>Total Budget: $<span id="total-budget">1000</span></p>
+                <p>Spent: $<span id="spent-amount">250</span></p>
+                <p>Remaining: $<span id="remaining-amount">750</span></p>
+            </div>
+            <button id="add-expense">Add Expense</button>
+        </section>
+
+        <section id="map">
+            <h2>Trip Map</h2>
+            <div class="map-placeholder">
+                <!-- In a real app, this would be replaced with an actual map -->
+                <p>Map will be displayed here</p>
+            </div>
+        </section>
+
+        <section id="voting">
+            <h2>Activity Voting</h2>
+            <div class="voting-list">
+                <div class="voting-item">
+                    <span class="activity">Visit Louvre Museum</span>
+                    <button class="vote-btn">Vote</button>
+                    <span class="vote-count">3 votes</span>
+                </div>
+                <div class="voting-item">
+                    <span class="activity">Seine River Cruise</span>
+                    <button class="vote-btn">Vote</button>
+                    <span class="vote-count">2 votes</span>
+                </div>
+            </div>
+            <button id="suggest-activity">Suggest Activity</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TravelTogether - Collaborative Travel Itinerary Builder</p>
+    </footer>
+</body>
+</html>
+
